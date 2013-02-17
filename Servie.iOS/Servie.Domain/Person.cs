@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Servie.Server.Domain
+namespace Servie.Domain
 {
 	[Serializable]
 	public class Person

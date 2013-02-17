@@ -1,5 +1,5 @@
 using System;
-using Servie.Server.Domain;
+using Servie.Domain;
 
 namespace Servie.Server.Repositories
 {

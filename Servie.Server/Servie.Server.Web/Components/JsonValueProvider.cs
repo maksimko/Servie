@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Collections;
 using System.IO;
 using System.Web.Script.Serialization;
-using Servie.Server.Domain;
+using Servie.Domain;
 using Servie.Server.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;

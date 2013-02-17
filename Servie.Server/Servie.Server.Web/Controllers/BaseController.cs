@@ -27,10 +27,10 @@ namespace Servie.Server.Web.Controllers
 
         public ActionResult Index()
         {        
-			return TemporaryLog(String.Format("Welcome to {0}!", GetType().Name));
+			return LogContent(GetType().Name);
         }
 
-		public ActionResult TemporaryLog(string text)
+		public ActionResult LogContent(string text)
 		{
 			Console.WriteLine(text);
 

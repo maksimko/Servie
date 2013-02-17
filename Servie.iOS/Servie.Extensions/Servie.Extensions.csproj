@@ -5,10 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4A159D1B-D02E-4CF1-B5F3-E33E0844966B}</ProjectGuid>
+    <ProjectGuid>{9D474898-C7D8-423C-B598-8775A6EB21DD}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Servie.Services</RootNamespace>
-    <AssemblyName>Servie.Services</AssemblyName>
+    <RootNamespace>Servie.Extensions</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Servie.Extensions</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -30,26 +32,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="SimpleInjector">
-      <HintPath>..\..\Libs\SimpleInjector.dll</HintPath>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="RestSharp.MonoTouch">
+      <HintPath>..\..\Libs\RestSharp.MonoTouch.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\IPersonService.cs" />
-    <Compile Include="DIContainer.cs" />
-    <Compile Include="Services\PersonService.cs" />
-    <Compile Include="Contracts\IService.cs" />
-    <Compile Include="Services\BaseService.cs" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Servie.Server.Domain\Servie.Server.Domain.csproj">
-      <Project>{14FF9CA6-1C0F-4B5E-A35B-E0C0CA306160}</Project>
-      <Name>Servie.Server.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Servie.Server.Repositories\Servie.Server.Repositories.csproj">
-      <Project>{FFD32D49-7685-4F4E-8C62-A3A4DFE234FF}</Project>
-      <Name>Servie.Server.Repositories</Name>
-    </ProjectReference>
+    <Compile Include="ActionExtensions.cs" />
+    <Compile Include="IRestResponseExtensions.cs" />
   </ItemGroup>
 </Project>

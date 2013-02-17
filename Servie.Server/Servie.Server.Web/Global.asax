@@ -1,1 +1,1 @@
-<%@ Application Inherits="Servie.Server.MvcApplication" %>
+<%@ Application Inherits="Servie.Server.Web.MvcApplication" %>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Servie.Server.Services;
-using Servie.Server.Domain;
+using Servie.Domain;
 using Newtonsoft.Json;
 
 namespace Servie.Server.Web.Controllers
@@ -18,23 +18,30 @@ namespace Servie.Server.Web.Controllers
 		[HttpPost]
 		public ActionResult Login(string jsonData)
         {	
-			TemporaryLog("Login");
+			LogContent("Login");
+			LogContent (jsonData);
 
 			var person = Deserialize<Person> (jsonData);
 
 			var personResponse = new Person()
 			{
-				Login = "test",
-				Password = "test"
+				Login = "Response login",
+				Password = "Response password"
 			};
 
 			return JsonResponse (personResponse);
         }
 
 		[HttpPost]
+		public ActionResult Logout(string jsonData)
+		{
+			return LogContent("Logout");
+		}
+
+		[HttpPost]
 		public ActionResult Register(string jsonData)
 		{
-			return TemporaryLog("Register");
+			return LogContent("Register");
 		}
     }
 }

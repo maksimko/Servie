@@ -49,14 +49,19 @@
   <ItemGroup>
     <Compile Include="Core\Common\RequestType.cs" />
     <Compile Include="Core\Common\ServerCredentials.cs" />
-    <Compile Include="Contracts\IAuthenticating.cs" />
     <Compile Include="Core\ServerClient.cs" />
     <Compile Include="ConnectionManager.cs" />
+    <Compile Include="Contracts\IAuthentificator.cs" />
+    <Compile Include="Contracts\IConnectionManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Servie.Domain\Servie.Domain.csproj">
       <Project>{F3651500-EE80-4D27-8B67-08E563324455}</Project>
       <Name>Servie.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servie.Extensions\Servie.Extensions.csproj">
+      <Project>{9D474898-C7D8-423C-B598-8775A6EB21DD}</Project>
+      <Name>Servie.Extensions</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
