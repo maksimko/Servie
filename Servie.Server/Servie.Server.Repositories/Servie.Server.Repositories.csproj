@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FFD32D49-7685-4F4E-8C62-A3A4DFE234FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Servie.Repositories</RootNamespace>
+    <AssemblyName>Servie.Repositories</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\..\Libs\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\..\Libs\MongoDB.Bson.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Contracts\IPersonsRepository.cs" />
+    <Compile Include="Repositories\PersonsRepository.cs" />
+    <Compile Include="MongoManager.cs" />
+    <Compile Include="Contracts\IRepository.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Servie.Server.Domain\Servie.Server.Domain.csproj">
+      <Project>{14FF9CA6-1C0F-4B5E-A35B-E0C0CA306160}</Project>
+      <Name>Servie.Server.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

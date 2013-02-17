@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servie.Server.Web", "Servie.Server.Web\Servie.Server.Web.csproj", "{891215DE-5A89-4D0B-9BB7-6DEBF6286C08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servie.Server.Tests", "Servie.Server.Tests\Servie.Server.Tests.csproj", "{0D4EBB83-725F-4ED3-8F3F-93931C0F3044}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servie.Server.Domain", "Servie.Server.Domain\Servie.Server.Domain.csproj", "{14FF9CA6-1C0F-4B5E-A35B-E0C0CA306160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servie.Server.Extensions", "Servie.Server.Extensions\Servie.Server.Extensions.csproj", "{FC1A0EB5-7528-43DB-92DE-99787261B755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servie.Server.Repositories", "Servie.Server.Repositories\Servie.Server.Repositories.csproj", "{FFD32D49-7685-4F4E-8C62-A3A4DFE234FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servie.Server.Services", "Servie.Server.Services\Servie.Server.Services.csproj", "{4A159D1B-D02E-4CF1-B5F3-E33E0844966B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D4EBB83-725F-4ED3-8F3F-93931C0F3044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D4EBB83-725F-4ED3-8F3F-93931C0F3044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D4EBB83-725F-4ED3-8F3F-93931C0F3044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D4EBB83-725F-4ED3-8F3F-93931C0F3044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FF9CA6-1C0F-4B5E-A35B-E0C0CA306160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FF9CA6-1C0F-4B5E-A35B-E0C0CA306160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FF9CA6-1C0F-4B5E-A35B-E0C0CA306160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FF9CA6-1C0F-4B5E-A35B-E0C0CA306160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A159D1B-D02E-4CF1-B5F3-E33E0844966B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A159D1B-D02E-4CF1-B5F3-E33E0844966B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A159D1B-D02E-4CF1-B5F3-E33E0844966B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A159D1B-D02E-4CF1-B5F3-E33E0844966B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891215DE-5A89-4D0B-9BB7-6DEBF6286C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891215DE-5A89-4D0B-9BB7-6DEBF6286C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891215DE-5A89-4D0B-9BB7-6DEBF6286C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891215DE-5A89-4D0B-9BB7-6DEBF6286C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC1A0EB5-7528-43DB-92DE-99787261B755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC1A0EB5-7528-43DB-92DE-99787261B755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC1A0EB5-7528-43DB-92DE-99787261B755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC1A0EB5-7528-43DB-92DE-99787261B755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD32D49-7685-4F4E-8C62-A3A4DFE234FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD32D49-7685-4F4E-8C62-A3A4DFE234FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD32D49-7685-4F4E-8C62-A3A4DFE234FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD32D49-7685-4F4E-8C62-A3A4DFE234FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Servie.Server\Servie.Server.Web.csproj
+	EndGlobalSection
+EndGlobal
