@@ -1,4 +1,4 @@
 Servie
 ======
 
-Client-server (iOS project): SimpleInject, RestSharp, MVC
+Simple client-server (iOS project): SimpleInject, RestSharp, MVC
